@@ -8,7 +8,7 @@ export default {
     theme: {
         extend: {
             colors: {
-                // We can add custom colors here later
+                obsidian: '#0a0a0a', // Off-black
             },
             fontFamily: {
                 // We can add custom fonts here later

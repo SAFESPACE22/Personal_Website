@@ -2,13 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @layer base {
   html {
     scroll-behavior: smooth;
   }
 
   body {
-    @apply bg-slate-900 text-slate-100 antialiased;
+    @apply bg-obsidian text-gray-100 antialiased;
   }
 }
 
@@ -18,9 +30,9 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-900;
+  @apply bg-obsidian;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-slate-700 hover:bg-slate-600 rounded-full;
+  @apply bg-gray-800 hover:bg-gray-700 rounded-full;
 }

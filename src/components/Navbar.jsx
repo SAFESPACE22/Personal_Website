@@ -25,13 +25,13 @@ const Navbar = () => {
     ];
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-slate-900/90 backdrop-blur-md shadow-lg py-4' : 'bg-transparent py-6'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'bg-obsidian/90 backdrop-blur-md shadow-lg py-4 border-b border-white/10' : 'bg-transparent py-6'}`}>
             <div className="container mx-auto px-6 flex justify-between items-center">
                 <Link
                     to="hero"
                     smooth={true}
                     duration={500}
-                    className="text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 cursor-pointer"
+                    className="text-2xl font-bold text-white cursor-pointer tracking-tighter"
                 >
                     TV
                 </Link>
@@ -45,9 +45,9 @@ const Navbar = () => {
                             smooth={true}
                             duration={500}
                             spy={true}
-                            activeClass="text-cyan-400"
+                            activeClass="text-white font-bold"
                             offset={-70}
-                            className="text-slate-300 hover:text-cyan-400 cursor-pointer transition-colors text-sm font-medium tracking-wide"
+                            className="text-gray-400 hover:text-white cursor-pointer transition-colors text-sm font-medium tracking-wide"
                         >
                             {link.name.toUpperCase()}
                         </Link>
@@ -69,7 +69,7 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden bg-slate-900/95 backdrop-blur-md overflow-hidden"
+                        className="md:hidden bg-obsidian/95 backdrop-blur-md overflow-hidden border-b border-white/10"
                     >
                         <div className="flex flex-col items-center py-8 space-y-6">
                             {navLinks.map((link) => (
@@ -80,7 +80,7 @@ const Navbar = () => {
                                     duration={500}
                                     offset={-70}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-slate-300 hover:text-cyan-400 text-lg font-medium cursor-pointer"
+                                    className="text-gray-400 hover:text-white text-lg font-medium cursor-pointer"
                                 >
                                     {link.name}
                                 </Link>

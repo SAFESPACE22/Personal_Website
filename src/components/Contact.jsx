@@ -17,11 +17,10 @@ const Contact = () => {
         e.preventDefault();
         setIsSending(true);
 
-        const serviceId = "service_tkue2bj";
-        const templateId = "template_oxn6uyg";
+        const serviceId = "service_n6botl8";
+        const templateId = "template_djmym4o";
         const publicKey = "ysfOa6yMydPzuJjln";
 
-        // Create a temporary object that matches EmailJS template variables
         const templateParams = {
             from_name: formData.name,
             from_email: formData.email,
@@ -45,7 +44,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-20 bg-slate-900">
+        <section id="contact" className="py-20 bg-obsidian">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -54,7 +53,7 @@ const Contact = () => {
                     className="text-center mb-16"
                 >
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-                    <p className="text-slate-400">Have a project in mind? Let's talk.</p>
+                    <p className="text-gray-400">Have a project in mind? Let's talk.</p>
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -66,31 +65,31 @@ const Contact = () => {
                     >
                         <h3 className="text-2xl font-bold text-white mb-6">Contact Info</h3>
                         <div className="space-y-6">
-                            <div className="flex items-center gap-4 text-slate-400">
-                                <div className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-cyan-400">
+                            <div className="flex items-center gap-4 text-gray-400">
+                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
                                     <Mail size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-slate-500">Email</p>
-                                    <p className="text-white font-medium">hello@tylervuong.dev</p>
+                                    <p className="text-sm text-gray-500">Email</p>
+                                    <p className="text-white font-medium">tylervuong03@gmail.com</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4 text-slate-400">
-                                <div className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-cyan-400">
+                            <div className="flex items-center gap-4 text-gray-400">
+                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
                                     <Phone size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-slate-500">Phone</p>
-                                    <p className="text-white font-medium">+1 (555) 123-4567</p>
+                                    <p className="text-sm text-gray-500">Phone</p>
+                                    <p className="text-white font-medium">+1 (405) 868-8439</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4 text-slate-400">
-                                <div className="w-12 h-12 bg-slate-800 rounded-full flex items-center justify-center text-cyan-400">
+                            <div className="flex items-center gap-4 text-gray-400">
+                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
                                     <MapPin size={20} />
                                 </div>
                                 <div>
-                                    <p className="text-sm text-slate-500">Location</p>
-                                    <p className="text-white font-medium">San Francisco, CA</p>
+                                    <p className="text-sm text-gray-500">Location</p>
+                                    <p className="text-white font-medium">Oklahoma City, OK</p>
                                 </div>
                             </div>
                         </div>
@@ -104,41 +103,41 @@ const Contact = () => {
                     >
                         <form onSubmit={handleSubmit} className="space-y-4">
                             <div className="space-y-2">
-                                <label className="text-sm text-slate-400">Name</label>
+                                <label className="text-sm text-gray-400">Name</label>
                                 <input
                                     type="text"
                                     required
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                                    placeholder="John Doe"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
+                                    placeholder="Tyler Vuong"
                                 />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm text-slate-400">Email</label>
+                                <label className="text-sm text-gray-400">Email</label>
                                 <input
                                     type="email"
                                     required
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-cyan-500 transition-colors"
-                                    placeholder="john@example.com"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
+                                    placeholder="tyler@example.com"
                                 />
                             </div>
                             <div className="space-y-2">
-                                <label className="text-sm text-slate-400">Message</label>
+                                <label className="text-sm text-gray-400">Message</label>
                                 <textarea
                                     required
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                    className="w-full bg-slate-800 border border-slate-700 rounded-lg px-4 py-3 text-white h-32 resize-none focus:outline-none focus:border-cyan-500 transition-colors"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white h-32 resize-none focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
                                     placeholder="Your message here..."
                                 ></textarea>
                             </div>
                             <button
                                 type="submit"
                                 disabled={isSending}
-                                className={`w-full bg-cyan-600 hover:bg-cyan-500 text-white font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2 ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                className={`w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2 ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 {isSending ? "Sending..." : "Send Message"} <Send size={20} />
                             </button>
