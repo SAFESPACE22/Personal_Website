@@ -44,7 +44,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-20 bg-obsidian">
+        <section id="contact" className="py-20 bg-white dark:bg-obsidian transition-colors duration-300">
             <div className="container mx-auto px-6">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
@@ -52,8 +52,8 @@ const Contact = () => {
                     viewport={{ once: true }}
                     className="text-center mb-16"
                 >
-                    <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">Get In Touch</h2>
-                    <p className="text-gray-400">Have a project in mind? Let's talk.</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4 transition-colors">Get In Touch</h2>
+                    <p className="text-gray-600 dark:text-gray-400 transition-colors">Have a project in mind? Let's talk.</p>
                 </motion.div>
 
                 <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -63,33 +63,33 @@ const Contact = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
                     >
-                        <h3 className="text-2xl font-bold text-white mb-6">Contact Info</h3>
+                        <h3 className="text-2xl font-bold text-black dark:text-white mb-6 transition-colors">Contact Info</h3>
                         <div className="space-y-6">
-                            <div className="flex items-center gap-4 text-gray-400">
-                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
+                            <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
+                                <div className="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white transition-colors">
                                     <Mail size={20} />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500">Email</p>
-                                    <p className="text-white font-medium">tylervuong03@gmail.com</p>
+                                    <p className="text-black dark:text-white font-medium transition-colors">tylervuong03@gmail.com</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4 text-gray-400">
-                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
+                            <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
+                                <div className="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white transition-colors">
                                     <Phone size={20} />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500">Phone</p>
-                                    <p className="text-white font-medium">+1 (405) 868-8439</p>
+                                    <p className="text-black dark:text-white font-medium transition-colors">+1 (405) 868-8439</p>
                                 </div>
                             </div>
-                            <div className="flex items-center gap-4 text-gray-400">
-                                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-full flex items-center justify-center text-white">
+                            <div className="flex items-center gap-4 text-gray-600 dark:text-gray-400">
+                                <div className="w-12 h-12 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-full flex items-center justify-center text-black dark:text-white transition-colors">
                                     <MapPin size={20} />
                                 </div>
                                 <div>
                                     <p className="text-sm text-gray-500">Location</p>
-                                    <p className="text-white font-medium">Oklahoma City, OK</p>
+                                    <p className="text-black dark:text-white font-medium transition-colors">Oklahoma City, OK</p>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const Contact = () => {
                                     required
                                     value={formData.name}
                                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
+                                    className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-black dark:text-white focus:outline-none focus:border-black dark:focus:border-white focus:bg-black/10 dark:focus:bg-white/10 transition-colors"
                                     placeholder="Tyler Vuong"
                                 />
                             </div>
@@ -120,7 +120,7 @@ const Contact = () => {
                                     required
                                     value={formData.email}
                                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
+                                    className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-black dark:text-white focus:outline-none focus:border-black dark:focus:border-white focus:bg-black/10 dark:focus:bg-white/10 transition-colors"
                                     placeholder="tyler@example.com"
                                 />
                             </div>
@@ -130,14 +130,14 @@ const Contact = () => {
                                     required
                                     value={formData.message}
                                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                                    className="w-full bg-white/5 border border-white/10 rounded-lg px-4 py-3 text-white h-32 resize-none focus:outline-none focus:border-white focus:bg-white/10 transition-colors"
+                                    className="w-full bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-lg px-4 py-3 text-black dark:text-white h-32 resize-none focus:outline-none focus:border-black dark:focus:border-white focus:bg-black/10 dark:focus:bg-white/10 transition-colors"
                                     placeholder="Your message here..."
                                 ></textarea>
                             </div>
                             <button
                                 type="submit"
                                 disabled={isSending}
-                                className={`w-full bg-white hover:bg-gray-200 text-black font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2 ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
+                                className={`w-full bg-black dark:bg-white hover:bg-gray-800 dark:hover:bg-gray-200 text-white dark:text-black font-bold py-4 rounded-lg transition-colors flex items-center justify-center gap-2 ${isSending ? 'opacity-50 cursor-not-allowed' : ''}`}
                             >
                                 {isSending ? "Sending..." : "Send Message"} <Send size={20} />
                             </button>

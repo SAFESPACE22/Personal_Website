@@ -1,22 +1,27 @@
 
-import React from 'react';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
 
-const ScrollProgress = () => {
-    const { scrollYProgress } = useScroll();
+export const ScrollProgress = () => {
+    const [scrollWidth, setScrollWidth] = useState(0);
 
-    const scaleX = useSpring(scrollYProgress, {
-        stiffness: 100,
-        damping: 30,
-        restDelta: 0.001
-    });
+    const handleScroll = () => {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        setScrollWidth(scrolled);
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     return (
-        <motion.div
-            className="fixed top-[7.5%] left-0 right-0 h-1 bg-white origin-left z-50"
-            style={{ scaleX }}
-        />
+        <div className="fixed top-[7.5%] left-0 w-full h-1 z-50">
+            <div
+                className="h-full bg-black dark:bg-white transition-all duration-150 ease-out origin-left"
+                style={{ width: `${scrollWidth}%` }}
+            ></div>
+        </div>
     );
 };
-
-export default ScrollProgress;

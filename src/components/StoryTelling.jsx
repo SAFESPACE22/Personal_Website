@@ -28,19 +28,19 @@ const StoryTelling = () => {
     ];
 
     return (
-        <section className="py-20 bg-obsidian text-gray-100">
+        <section className="py-20 bg-white dark:bg-obsidian text-gray-900 dark:text-gray-100 transition-colors duration-300">
             <div className="container mx-auto px-6">
                 <div className="flex flex-col md:flex-row gap-12 md:gap-20">
 
                     {/* Sticky Left Panel */}
                     <div className="md:w-1/3">
                         <div className="md:sticky md:top-32">
-                            <h2 className="text-4xl font-bold text-white mb-6">My Journey</h2>
-                            <p className="text-gray-400 mb-8">
+                            <h2 className="text-4xl font-bold text-black dark:text-white mb-6 transition-colors">My Journey</h2>
+                            <p className="text-gray-600 dark:text-gray-400 mb-8 transition-colors">
                                 From writing my first "Hello World" to deploying complex applications, here's a brief look at my path so far.
                             </p>
-                            <div className="w-full h-64 bg-white/5 rounded-xl border border-white/10 flex items-center justify-center">
-                                <span className="text-gray-600 font-bold">Journey Visual</span>
+                            <div className="w-full h-64 bg-gray-100 dark:bg-white/5 rounded-xl border border-black/10 dark:border-white/10 flex items-center justify-center transition-colors">
+                                <span className="text-gray-500 dark:text-gray-600 font-bold">Journey Visual</span>
                             </div>
                         </div>
                     </div>
@@ -49,11 +49,11 @@ const StoryTelling = () => {
                     <div className="md:w-2/3 space-y-16 pb-20">
                         {stories.map((item, index) => (
                             <RevealOnScroll key={index}>
-                                <div className="group relative pl-8 border-l border-white/10 hover:border-white transition-colors duration-300">
-                                    <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                <div className="group relative pl-8 border-l border-black/10 dark:border-white/10 hover:border-black dark:hover:border-white transition-colors duration-300">
+                                    <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 bg-black dark:bg-white rounded-full opacity-0 group-hover:opacity-100 transition-opacity"></div>
                                     <span className="text-sm font-mono text-gray-500 mb-2 block">{item.year}</span>
-                                    <h3 className="text-2xl font-bold text-white mb-4">{item.title}</h3>
-                                    <p className="text-gray-400 text-lg leading-relaxed">
+                                    <h3 className="text-2xl font-bold text-black dark:text-white mb-4 transition-colors">{item.title}</h3>
+                                    <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed transition-colors">
                                         {item.text}
                                     </p>
                                 </div>

@@ -8,11 +8,11 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-import ScrollProgress from './components/ScrollProgress';
+import { ScrollProgress } from './components/ScrollProgress';
 
 function App() {
     return (
-        <div className="bg-obsidian min-h-screen text-gray-100 selection:bg-white selection:text-black">
+        <div className="bg-white dark:bg-obsidian text-gray-900 dark:text-gray-100 min-h-screen selection:bg-black selection:text-white dark:selection:bg-white dark:selection:text-black transition-colors duration-300">
             <ScrollProgress />
             <Navbar />
             <main>
@@ -25,7 +25,7 @@ function App() {
                 <Contact />
             </main>
 
-            <footer className="bg-obsidian py-8 text-center text-gray-500 text-sm">
+            <footer className="bg-white dark:bg-obsidian py-8 text-center text-gray-600 dark:text-gray-500 text-sm transition-colors duration-300">
                 <p>© {new Date().getFullYear()} Tyler J. Vuong.</p>
             </footer>
         </div>
