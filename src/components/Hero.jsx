@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Download } from 'lucide-react';
 import { Link } from 'react-scroll';
 import Typed from 'typed.js';
-
+import CV from '../Assets/Vuong_Tyler_Resume.pdf';
 const Hero = () => {
     const [offset, setOffset] = useState(0);
     const el = useRef(null);
@@ -74,11 +74,13 @@ const Hero = () => {
                             View Work <ArrowRight className="group-hover:translate-x-1 transition-transform" size={20} />
                         </Link>
                         <a
-                            href="#"
+                            href="Vuong_Tyler_Resume.pdf"       // Path to your resume in the public folder
+                            download="Tyler_Vuong_Resume.pdf" // Optional: the file name when downloaded
                             className="px-8 py-3 rounded-full border border-gray-300 dark:border-gray-700 text-gray-600 dark:text-gray-300 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition-all flex items-center gap-2 font-medium"
                         >
                             Download CV <Download size={20} />
                         </a>
+
                     </div>
                 </motion.div>
             </div>

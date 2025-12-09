@@ -2,7 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { RevealOnScroll } from './RevealOnScroll';
-
+import Headshot from '../Assets/images/Headshot.jpg';
 const StoryTelling = () => {
     const stories = [
         {
@@ -39,9 +39,15 @@ const StoryTelling = () => {
                             <p className="text-gray-600 dark:text-gray-400 mb-8 transition-colors">
                                 From writing my first "Hello World" to deploying complex applications, here's a brief look at my path so far.
                             </p>
-                            <div className="w-full h-64 bg-gray-100 dark:bg-white/5 rounded-xl border border-black/10 dark:border-white/10 flex items-center justify-center transition-colors">
-                                <span className="text-gray-500 dark:text-gray-600 font-bold">Journey Visual</span>
+                            <div className="w-full rounded-xl overflow-hidden bg-gray-100 dark:bg-white/5 border border-black/10 dark:border-white/10 shadow-lg group hover:shadow-2xl transition-all duration-500">
+                                <img
+                                    src={Headshot}
+                                    alt="About Me"
+                                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
+                                />
+
                             </div>
+
                         </div>
                     </div>
 

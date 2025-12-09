@@ -4,6 +4,7 @@ import { Link } from 'react-scroll';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../hooks/useTheme';
+import { ScrollProgress } from './ScrollProgress';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -107,6 +108,7 @@ const Navbar = () => {
                     </motion.div>
                 )}
             </AnimatePresence>
+            <ScrollProgress />
         </nav>
     );
 };

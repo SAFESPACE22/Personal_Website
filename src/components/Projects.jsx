@@ -2,6 +2,9 @@
 import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
+import tiktok from '../Assets/images/tiktok.png';
+import diamond from '../Assets/images/diamond.png';
+import cook from '../Assets/images/Cook.jpg';
 
 const projects = [
     {
@@ -41,10 +44,29 @@ const Projects = () => {
                             <div
                                 className="group bg-gray-50 dark:bg-obsidian/50 rounded-xl overflow-hidden border border-black/10 dark:border-white/10 hover:border-black/30 dark:hover:border-white/30 transition-all hover:-translate-y-2 hover:shadow-xl hover:shadow-black/5 dark:hover:shadow-white/5 h-full"
                             >
-                                <div className="h-48 bg-gray-200 dark:bg-gray-900 flex items-center justify-center group-hover:bg-gray-300 dark:group-hover:bg-gray-800 transition-colors relative overflow-hidden">
-                                    {/* Image Placeholder or Overlay */}
-                                    <div className="absolute inset-0 bg-gradient-to-t from-white dark:from-obsidian to-transparent opacity-60"></div>
-                                    <span className="text-gray-500 font-bold text-2xl z-10">PROJECT IMG</span>
+                                <div className="h-48 overflow-hidden relative">
+                                    <div className="absolute inset-0 bg-black/20 z-10 group-hover:bg-black/0 transition-colors duration-500"></div>
+                                    {index === 0 && (
+                                        <img
+                                            src={tiktok}
+                                            alt="TikTok project"
+                                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    )}
+                                    {index === 1 && (
+                                        <img
+                                            src={diamond}
+                                            alt="diamond project"
+                                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    )}
+                                    {index === 2 && (
+                                        <img
+                                            src={cook}
+                                            alt="cook project"
+                                            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
+                                        />
+                                    )}
                                 </div>
 
                                 <div className="p-6">

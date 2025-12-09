@@ -1,6 +1,6 @@
-
 import React from 'react';
 import { RevealOnScroll } from './RevealOnScroll';
+import OU from '../Assets/images/OU.png';
 
 const About = () => {
     return (
@@ -8,12 +8,14 @@ const About = () => {
             <div className="container mx-auto px-6">
                 <RevealOnScroll>
                     <div className="flex flex-col md:flex-row items-center gap-12">
-                        {/* Image Placeholder */}
                         <div className="w-64 h-64 shrink-0 relative">
                             <div className="absolute inset-0 bg-gradient-to-tr from-black/10 to-gray-500/10 dark:from-white/20 dark:to-gray-500/20 rounded-2xl rotate-6 opacity-50 blur-lg transition-colors"></div>
-                            <div className="relative w-full h-full bg-gray-100 dark:bg-obsidian/50 rounded-2xl overflow-hidden border border-black/10 dark:border-white/20 flex items-center justify-center transition-colors">
-                                <span className="text-gray-400 dark:text-gray-500 font-bold text-xl">IMG</span>
-                                {/* Replace this div with actual <img> tag */}
+                            <div className="relative w-full h-full bg-gray-100 dark:bg-obsidian/50 rounded-2xl overflow-hidden border border-black/10 dark:border-white/20 shadow-2xl transition-transform duration-500 hover:scale-[1.02]">
+                                <img
+                                    src={OU}
+                                    alt="About Me"
+                                    className="w-full h-full object-cover"
+                                />
                             </div>
                         </div>
 

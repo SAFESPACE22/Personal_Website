@@ -3,10 +3,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const skills = [
-    { category: "Frontend", items: ["React", "TypeScript", "Tailwind CSS", "Next.js", "Framer Motion"] },
-    { category: "Backend", items: ["Node.js", "Express", "PostgreSQL", "Firebase", "Python"] },
-    { category: "Tools", items: ["Git", "Docker", "VS Code", "Figma", "Vercel"] },
+    {
+        category: "Programming Languages",
+        items: ["Python", "Java", "C/C++", "Dart", "JavaScript", "R", "SQL", "NoSQL", "Fortran", "Lua"]
+    },
+    {
+        category: "Tools",
+        items: ["Git", "Docker", "Firebase", "Unix/Linux", "Agile", "Shell", "ServiceNow", "Azure DevOps"]
+    },
 ];
+
 
 const Skills = () => {
     return (
@@ -23,7 +29,7 @@ const Skills = () => {
                     <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto transition-colors">The technologies and tools I stare at for 10+ hours a day.</p>
                 </motion.div>
 
-                <div className="grid md:grid-cols-3 gap-8">
+                <div className="grid md:grid-cols-2 gap-8 justify-center">
                     {skills.map((skillGroup, index) => (
                         <motion.div
                             key={skillGroup.category}
