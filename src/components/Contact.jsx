@@ -17,8 +17,8 @@ const Contact = () => {
         e.preventDefault();
         setIsSending(true);
 
-        const serviceId = "service_n6botl8";
-        const templateId = "template_djmym4o";
+        const serviceId = "service_tkue2bj";
+        const templateId = "template_oxn6uyg";
         const publicKey = "ysfOa6yMydPzuJjln";
 
         const templateParams = {
