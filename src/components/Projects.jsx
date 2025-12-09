@@ -3,7 +3,7 @@ import React from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { RevealOnScroll } from './RevealOnScroll';
 import tiktok from '../Assets/images/tiktok.png';
-import diamond from '../Assets/images/diamond.png';
+import Diamond from '../Assets/images/Diamond.png';
 import cook from '../Assets/images/Cook.jpg';
 
 const projects = [
@@ -55,8 +55,8 @@ const Projects = () => {
                                     )}
                                     {index === 1 && (
                                         <img
-                                            src={diamond}
-                                            alt="diamond project"
+                                            src={Diamond}
+                                            alt="Diamond project"
                                             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-500"
                                         />
                                     )}
