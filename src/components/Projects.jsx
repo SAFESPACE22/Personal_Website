@@ -8,22 +8,22 @@ import cook from '../Assets/images/Cook.jpg';
 
 const projects = [
     {
-        title: "Project Alpha",
-        description: "A full-stack e-commerce platform with real-time inventory management.",
-        tech: ["React", "Node.js", "MongoDB"],
-        links: { github: "#", live: "#" }
+        title: "Automated Social Media Scrolling",
+        description: "Developed a hands-free application utilizing computer vision and person tracking for automated social media scrolling. Reduced the need to hold a mobile device by 100% to binge watch scrolling social media platforms.",
+        tech: ["Mediapipe", "OpenCV", "RaspberryPI", "PyAutoGui", "PyTorch"],
+        links: { github: "https://github.com/SAFESPACE22", live: "https://safespace22.github.io" }
     },
     {
-        title: "Beta App",
-        description: "Social media dashboard for analytics and content scheduling.",
-        tech: ["Vue.js", "Firebase", "Tailwind"],
-        links: { github: "#", live: "#" }
+        title: "I-CCEW Safety Application",
+        description: "Cross-platform safety application for lone workers that successfully reduced the time to alert emergency responders by 50%.",
+        tech: ["Dart", "Firebase"],
+        links: { github: "https://github.com/SAFESPACE22", live: "https://safespace22.github.io" }
     },
     {
-        title: "Gamma Tools",
-        description: "CLI tool for automating developer workflows.",
-        tech: ["Rust", "Clap"],
-        links: { github: "#", live: "#" }
+        title: "CAD Automation Tool",
+        description: "Automation tool that reduced image export processing time by 96% across 300K+ CAD files at Textron Inc.",
+        tech: ["C/C++", "Fortran", "Shell", "Unix/Linux"],
+        links: { github: "https://github.com/SAFESPACE22", live: "https://safespace22.github.io" }
     }
 ];
 

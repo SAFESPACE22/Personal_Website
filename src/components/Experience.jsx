@@ -4,22 +4,34 @@ import { motion } from 'framer-motion';
 
 const experiences = [
     {
-        year: "2023 - Present",
-        role: "Senior Frontend Engineer",
-        company: "Tech Corp",
-        description: "Leading the frontend team in rebuilding the core platform using React and Next.js."
+        year: "Aug 2025 - Present",
+        role: "Team Lead Software Developer",
+        company: "I-CCEW (Oklahoma's Largest Innovation Consultant)",
+        description: "Led a 5-member developer team to deliver a consulting-strategy automation tool using Dart and Firebase, reducing consulting load by 70%. Applied agile practices, taught Git for version control, and bridged communication between business teams, clients, and developers."
     },
     {
-        year: "2021 - 2023",
-        role: "Full Stack Developer",
-        company: "Startup Inc",
-        description: "Built and scaled the MVP from 0 to 10k users. Implemented real-time features using WebSockets."
+        year: "Jun 2025 - Aug 2025",
+        role: "Software Developer",
+        company: "Textron Inc. (Fortune 500)",
+        description: "Developed and deployed an automation tool that reduced image export processing time by 96% across 300K+ CAD files. Enhanced automation with a wrapper script to batch process 332,591 .cdd files, ultimately decommissioning a CAD license and eliminating future technical debt."
     },
     {
-        year: "2019 - 2021",
-        role: "Junior Web Developer",
-        company: "Agency Studio",
-        description: "Collaborated with designers to implement pixel-perfect landing pages for various clients."
+        year: "Jan 2025 - May 2025",
+        role: "Software Developer",
+        company: "I-CCEW",
+        description: "Engineered and deployed a cross-platform safety application for lone workers that reduced time to alert emergency responders by 50%. Collaborated with developers to align technical goals with business objectives in bi-weekly sprints."
+    },
+    {
+        year: "Aug 2025 - Present",
+        role: "Executive Board of Strategy and Technology",
+        company: "The Big Event (8K+ Volunteers)",
+        description: "Directed promotional activities and managed logistics for 8K+ annual volunteers dedicated to community service projects. Built an application prototype to manage volunteers and their data for the University of Oklahoma's largest volunteering event."
+    },
+    {
+        year: "Aug 2024 - Present",
+        role: "Shift Lead",
+        company: "Tamashii Inc. (Best Ramen Restaurant)",
+        description: "Delegated responsibilities and monitored task completion to optimize team performance of 10 servers. Trained and mentored new hires, administering onboarding evaluations and performance feedback."
     }
 ];
 

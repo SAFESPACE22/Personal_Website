@@ -23,7 +23,7 @@ const Hero = () => {
     // Typed.js Effect
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Software Engineer!", "Student!", "Data Scientist!"],
+            strings: ["Team Lead Developer!", "Software Engineer!", "Graduate Student!"],
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 1000,

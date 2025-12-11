@@ -1,0 +1,52 @@
+TYLER J. V UONG
+(405)-868-8439 tylervuong03@gmail.com linkedin.com/in/tyler-vuong GitHub SAFESPACE22
+EDUCATION
+University of Oklahoma Norman, OK
+Master of Science in Computer Science GPA:(4.00/4.00) January 2024 – Expected May 2026
+University of Oklahoma Norman, OK
+Bachelor of Science in Computer Science, Minor in Mathematics GPA:(3.72/4.00) August 2022 – May 2025
+CodePath Virtual
+Data Structure courses and Technical Interview Prep September 2025 – Present 2025
+WORK EXPERIENCE
+I-CCEW (Oklahoma’s Largest Innovation Consultant; $48M Value Generated) Norman, OK
+Team Lead Software Developer August 2025 – Present
+•Led a 5-member developer team to deliver a consulting-strategy automation tool using Dart and Firebase, to reduce
+consulting load by 70% integrating AI into the application.
+•Applied agile practices by creating backlog items and conducting regular status update meetings to guide CI/CD .
+•Taught and applied Gitfor version control, conducted peer reviews, and enforced unit testing to ensure code quality.
+•Bridged communication between the business team, clients, directors, developers, and mentors.
+Software Developer |Dart, Firebase January 2025 – May 2025
+•Engineered, developed, and deployed a cross-platform safety application for lone workers that successfully reduced the
+time to alert emergency responders by 50%.
+•Collaborated with developers to align technical goals with business objectives in bi-weekly sprints .
+•Presented progress updates and delivered final product demos , strengthening client engagement and communication.
+Textron Inc. (Fortune 500 Company; Generated $13.7B revenue in 2024) Wichita, KS
+Software Developer |C/C++, Fortran, Shell, Unix/Linux June 2025 – August 2025
+•Developed and deployed an automation tool into production that reduced image export processing time by 96% across
+300K+ CAD files .
+•Enhanced automation with a wrapper script to batch process 332,591 .cdd files , producing 30,497 raster images for
+engineers use with minimal manual intervention.
+•Used Agile methodologies through regular standups and sprint cycles, collaborating with engineers to test results,
+ultimately decommissioning a CAD license and eliminating future technical debt and security vulnerabilities.
+The Big Event (8k+ Annual Volunteers, $80k operational budget) Norman, OK
+Executive Board of Strategy and Technology August 2025 – Present
+•Directed and executed all promotional activities, including managing a dedicated booth, to drive participation for the
+University of Oklahoma’s largest volunteering event.
+•Managed logistics and coordination for 8K+ annual volunteers dedicated to community service projects across Norman
+(e.g., cleaning local parks, maintaining wildlife sites, and supporting youth centers).
+•Built an application prototype to manage 8K+ volunteers and their data.
+Tamashii Inc. (Best Ramen Restaurant;(1.2k+ reviews, 4.9/5 Stars)) Norman, OK
+Shift Lead August 2024 – Present
+•Delegated responsibilities and monitored task completion to optimize team performance of 10 servers.
+•Trained and mentored new hires, administering on boarding evaluations and performance feedback.
+PROJECTS
+Automated Social Media Scrolling Norman, OK
+Mediapipe, OpenCV, RasberryPI, PyAutoGui, PyTorch August 2024 – Present
+•Developed a hands-free application utilizing computer vision and person tracking for automated social media scrolling.
+•Reduced the need to hold a mobile device by 100% to binge watch scrolling social media platforms
+TECHNICAL SKILLS
+Programming Languages : Python, Java, C/C++, Dart, JavaScript, R, SQL, NoSQL, Fortran, Lua
+Tools : Git, Docker, Firebase, Unix/Linux, Agile, Shell, ServiceNow, Azure Devops
+My Projects : https://safespace22.github.io
+ABOUT ME
+A new college graduate, with a passion for innovation. Off the clock, I enjoy sports, aquaponics, and producing music.

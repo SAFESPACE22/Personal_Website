@@ -25,10 +25,10 @@ const About = () => {
                                 About Me
                             </h2>
                             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-6 transition-colors">
-                                I'm a passionate developer who loves turning complex problems into beautiful, simple interface designs. I started my journey in web development 5 years ago, and I have hands-on experience in building scaleable web applications.
+                                I'm a new college graduate currently pursuing my Master of Science in Computer Science at the University of Oklahoma (GPA: 4.00/4.00), with a passion for innovation and turning complex problems into elegant solutions.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed transition-colors">
-                                When I'm not coding, you can find me exploring new technologies, contributing to open source, or gaming. I believe in continuous learning and always strive to improve my craft.
+                                Off the clock, you can find me enjoying sports, tending to my aquaponics systems, or producing music. I believe in continuous learning and always strive to push the boundaries of what's possible with technology.
                             </p>
                         </div>
                     </div>
