@@ -14,6 +14,7 @@ const Navbar = () => {
 
     const audioRef = React.useRef(new Audio(BackgroundMusic));
     const [isPlaying, setIsPlaying] = useState(false);
+    const [showWelcome, setShowWelcome] = useState(true);
 
     useEffect(() => {
         audioRef.current.loop = true;
@@ -35,6 +36,11 @@ const Navbar = () => {
 
     const toggleMusic = () => {
         setIsPlaying(!isPlaying);
+    };
+
+    const handleWelcome = () => {
+        setShowWelcome(false);
+        setIsPlaying(true);
     };
 
     useEffect(() => {
@@ -151,6 +157,38 @@ const Navbar = () => {
                 )}
             </AnimatePresence>
             <ScrollProgress />
+
+            {/* Welcome Modal */}
+            <AnimatePresence>
+                {showWelcome && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[60] bg-black/90 backdrop-blur-sm flex items-center justify-center p-4"
+                    >
+                        <motion.div
+                            initial={{ scale: 0.9, opacity: 0 }}
+                            animate={{ scale: 1, opacity: 1 }}
+                            transition={{ delay: 0.2 }}
+                            className="bg-white dark:bg-obsidian border border-white/10 p-8 md:p-12 rounded-2xl max-w-2xl text-center shadow-2xl"
+                        >
+                            <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6">
+                                Proverbs 14:23
+                            </h2>
+                            <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed italic">
+                                "All hard work brings a profit, but mere talk leads only to poverty."
+                            </p>
+                            <button
+                                onClick={handleWelcome}
+                                className="bg-black dark:bg-white text-white dark:text-black px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-all transform hover:scale-105 active:scale-95"
+                            >
+                                Enter
+                            </button>
+                        </motion.div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
         </nav>
     );
 };
