@@ -1,7 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Music, PauseCircle } from 'lucide-react';
+import BackgroundMusic from '../Assets/Emotional Piano for the Soul (Inspirational Background Music).mp3';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useTheme } from '../hooks/useTheme';
 import { ScrollProgress } from './ScrollProgress';
@@ -10,6 +11,31 @@ const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
     const { theme, setTheme } = useTheme();
+
+    const audioRef = React.useRef(new Audio(BackgroundMusic));
+    const [isPlaying, setIsPlaying] = useState(false);
+
+    useEffect(() => {
+        audioRef.current.loop = true;
+        audioRef.current.volume = 0.5;
+
+        if (isPlaying) {
+            audioRef.current.play().catch(error => {
+                console.log("Autoplay prevented:", error);
+                setIsPlaying(false);
+            });
+        } else {
+            audioRef.current.pause();
+        }
+
+        return () => {
+            audioRef.current.pause();
+        };
+    }, [isPlaying]);
+
+    const toggleMusic = () => {
+        setIsPlaying(!isPlaying);
+    };
 
     useEffect(() => {
         const handleScroll = () => {
@@ -63,6 +89,14 @@ const Navbar = () => {
                     >
                         {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
                     </button>
+
+                    <button
+                        onClick={toggleMusic}
+                        className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors"
+                        aria-label="Toggle Music"
+                    >
+                        {isPlaying ? <PauseCircle size={20} /> : <Music size={20} />}
+                    </button>
                 </div>
 
                 {/* Mobile Toggle */}
@@ -72,6 +106,14 @@ const Navbar = () => {
                         className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
                     >
                         {theme === 'dark' ? <Sun size={24} /> : <Moon size={24} />}
+                    </button>
+
+                    <button
+                        onClick={toggleMusic}
+                        className="text-gray-600 dark:text-gray-300 hover:text-black dark:hover:text-white transition-colors"
+                        aria-label="Toggle Music"
+                    >
+                        {isPlaying ? <PauseCircle size={24} /> : <Music size={24} />}
                     </button>
 
                     <button onClick={() => setIsOpen(!isOpen)} className="text-gray-600 dark:text-slate-300 hover:text-black dark:hover:text-white">

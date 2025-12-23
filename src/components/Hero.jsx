@@ -23,7 +23,7 @@ const Hero = () => {
     // Typed.js Effect
     useEffect(() => {
         const typed = new Typed(el.current, {
-            strings: ["Team Lead Developer!", "Software Engineer!", "Graduate Student!"],
+            strings: ["Software Engineer!", "Graduate Student!", "Believer!"],
             typeSpeed: 50,
             backSpeed: 50,
             backDelay: 1000,
@@ -58,10 +58,6 @@ const Hero = () => {
                     <div className="text-2xl md:text-4xl font-bold text-black dark:text-white mb-6 h-[40px] transition-colors">
                         I'm a <span className="text-black dark:text-white border-b-2 border-black dark:border-white transition-colors" ref={el}></span>
                     </div>
-
-                    <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto transition-colors">
-                        Building digital experiences with <span className="text-black dark:text-white font-bold border-b border-black/50 dark:border-white/50 pb-1 transition-colors">Code & Creativity</span>.
-                    </p>
 
                     <div className="flex flex-col md:flex-row gap-4 justify-center items-center mt-8">
                         <Link
