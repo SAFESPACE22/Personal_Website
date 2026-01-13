@@ -174,10 +174,10 @@ const Navbar = () => {
                             className="bg-white dark:bg-obsidian border border-white/10 p-8 md:p-12 rounded-2xl max-w-2xl text-center shadow-2xl"
                         >
                             <h2 className="text-3xl md:text-4xl font-bold text-black dark:text-white mb-6">
-                                Proverbs 14:23
+                                Welcome To My Website!
                             </h2>
                             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-10 leading-relaxed italic">
-                                "All hard work brings a profit, but mere talk leads only to poverty."
+                                All hard work brings a profit, but mere talk leads only to poverty.
                             </p>
                             <button
                                 onClick={handleWelcome}
